@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
+:root{
+
+--cor1:#FAD250;
+--cor2:#F5A642;
+--cor3:#33a5d9;
+--cor4:#2B89B5;
+--fonte-destaque: 'Roboto', sans-serif;
+--fonte-padrão:'Catamaran', sans-serif;
+}
+
+
+body{
+    
+    background-image: url("Background\ Viagem\ 1200x800.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-position: center center;
+    
+}
+
+nav{
+    background-color: var(--cor2);
+   min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.089);
+    
+
+}
+.logo{
+    padding: 15px;
+}
+nav ul{
+    
+    list-style: none;
+    display: flex;
+    
+    
+}
+nav li{
+    margin: 0px 10px 0px 10px;
+    font-family: 3em;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+   
+    
+}
+.menu:hover{
+
+    background-color: var(--cor1);
+}
+
+
+
+main{
+    width: 100%;
+    display: flex;
+    
+    
+    
+}
+
+
+
+
+.texto{
+   padding: 20px;
+    background-color: none;
+    max-width: 500px;
+    min-width: 320px;
+    background-color: rgba(0, 0, 0, 0.144);
+   
+}
+#caixa1{
+    max-width: 500px;
+    min-width: 320px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.055);
+   
+}
+#caixa1 h1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: var(--cor1);
+      text-align: left;
+    font-size: 3em;
+    font-family: var(--fonte-destaque);
+    font-weight: bold
+    
+}
+#caixa1 p{
+    line-height: 1.5em;
+    color: var(--cor2);
+    margin-top: 80px;
+    text-align: justify;
+    margin-bottom: 30px;
+    font-family: var(--fonte-padrão);
+    font-weight: bold;
+}
+.inputtexto{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.inputtexto span{
+
+    color: white;
+    font-size: 1.3em;
+    font-family: var(--fonte-padrão);
+    font-weight: bold;
+}
+.inputtexto input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.13);
+}
+
+
+#caixa2{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.13);
+    display: block;
+    margin: auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.158);
+    border-radius: 5px;
+}
+#caixa2 h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+}
+
+div.botão{
+    
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+
+
+}
+.botão-cadastrar{
+    width: 100%;
+    height: 30px;
+   background-color: var(--cor2);
+   border-radius: 5px;
+   border-style: hidden;
+   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.199);
+
+}
+.botão-cadastrar:hover{
+    background-color: var(--cor1);
+    font-weight: bold;
+}
+footer{
+    background-color: var(--cor2);
+    
+    margin-top: 5px;
+}
+footer p{
+    text-align: center;
+    color: black;
+    font-family: var(--fonte-destaque);
+    
+    padding: 1px;
+    
+}
+
+
+@media screen and (max-width:1192px){
+
+   
+    div#caixa2{
+        margin: auto;
+    }
+}
+@media screen and (max-width:1015px){
+
+    main{
+        
+        display: block;
+    }
+    #caixa1{
+        margin: auto;
+    }
+    .texto{
+        margin: auto;
+    }
+    #caixa2{
+        text-align: center;
+        margin: auto;
+        margin-left: 0px;
+    }
+    #caixa2 h1{
+        text-align: center;
+    }
+    @media screen and (max-width:462px){
+
+.menu{
+    padding: 2px;
+    
+}
+.logo{
+    padding: 15px 0px 15px 0px;
+}
+
+    }
+nav li{
+    margin: 0px 2px 0px 2px;
+}
+.texto{
+    padding: 5px;
+}
+@media screen and (max-width:350px){
+    
+    nav ul{
+        display: block;
+       
+    }
+    nav.logo{
+        margin-left: 2px;
+    }
+    nav li{
+        margin-top: 5px;
+    }
+    .texto{
+        
+        padding: 0;
+    }
+    .texto  h1, p{
+        padding: 5px;
+    }
+    #caixa2{
+        padding: 2px;
+    }
+}
+}
+
+
